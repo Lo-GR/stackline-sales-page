@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
-import Logo from './assets/stackline_logo.svg'
+import Header from '../components/Header';
+import Logo from '../assets/stackline_logo.svg'
+import ProductDetails from './ProductDetails';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header>
         <img src={Logo} alt="logo" style={{height: "1rem"}}/>
       </Header>
+      <ProductDetails />
     </div>
   );
 }
