@@ -1,5 +1,8 @@
 .product-details-container {
   padding: 3rem 1rem;
   width: 100%;
-  background-color: #F6F8FA
+  background-color: #F6F8FA;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
