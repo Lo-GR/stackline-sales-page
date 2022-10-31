@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={salesHistoryStore}>
-    <App />
+      <App />
     </Provider>
   </React.StrictMode>
 );
