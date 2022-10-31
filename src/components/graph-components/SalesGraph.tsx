@@ -1,4 +1,3 @@
-import React from 'react'
 import {salesFormatter} from '../../helpers/graphDataFormatter'
 import { LineChart, Line, XAxis, Tooltip, Legend, } from 'recharts';
 import Paper from '@mui/material/Paper';
@@ -14,7 +13,6 @@ interface SalesGraphProps{
   }[]
 }
 export default function SalesGraph({sales}: SalesGraphProps) {
-  console.log(sales)
   return (
     <Paper className="graph-container">
       <LineChart

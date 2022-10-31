@@ -1,4 +1,3 @@
-import React from 'react'
 import Chip from '@mui/material/Chip';
 import './ProductTags.css'
 
@@ -7,12 +6,11 @@ interface ProductTagsProps{
 }
 
 export default function ProductTags({tags}: ProductTagsProps) {
-  console.log(tags)
   return (
     <div className="product-tags-container">
       <div className="product-tags-chips">
         {tags.map((tag): any => {
-          return <Chip label={tag} variant="outlined"/>
+          return <Chip key={tag} label={tag} variant="outlined"/>
         })} 
       </div>
     </div>

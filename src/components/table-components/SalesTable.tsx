@@ -1,5 +1,4 @@
 import { TableContainer, Paper, Table, TableHead, TableRow, TableCell, TableBody } from '@mui/material';
-import React from 'react'
 
 interface SalesTableProps{
   sales: {

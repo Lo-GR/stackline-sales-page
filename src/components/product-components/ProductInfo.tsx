@@ -1,4 +1,3 @@
-import React from 'react'
 import { salesHistory } from '../../types/salesHistory'
 import ProductSnippet from './ProductSnippet'
 import ProductTags from './ProductTags'
