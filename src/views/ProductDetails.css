@@ -1,6 +1,6 @@
 .product-details-container {
   padding: 3rem 1rem;
-  width: 100%;
+  width: full;
   background-color: #F6F8FA;
   display: flex;
   flex-direction: row;
