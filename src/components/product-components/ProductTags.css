@@ -1,3 +1,8 @@
 .product-tags-container{
-  width: 100%
+  width: 100%;
+  border-bottom: 1px rgba(0, 0, 0, 0.4) solid;
+}
+
+.product-tags-chips{
+  padding: 1rem
 }

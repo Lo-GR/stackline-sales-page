@@ -1,8 +1,9 @@
 import React from 'react'
 import { salesHistory } from '../../types/salesHistory'
-import './ProductInfo.css'
 import ProductSnippet from './ProductSnippet'
 import ProductTags from './ProductTags'
+import Paper from '@mui/material/Paper';
+import './ProductInfo.css'
 
 interface ProductInfoProps {
   salesData: salesHistory
@@ -10,12 +11,12 @@ interface ProductInfoProps {
 
 export default function ProductInfo({salesData}: ProductInfoProps) {
   return (
-    <div className="product-info-container">
+    <Paper className="product-info-container">
       <ProductSnippet 
         image={salesData.image} 
         title={salesData.title} 
         subtitle={salesData.subtitle} />
       <ProductTags tags={salesData.tags} />
-    </div>
+    </Paper>
   )
 }

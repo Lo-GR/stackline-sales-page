@@ -10,9 +10,11 @@ export default function ProductTags({tags}: ProductTagsProps) {
   console.log(tags)
   return (
     <div className="product-tags-container">
-      {tags.map((tag): any => {
-        return <Chip label={tag} variant="outlined"/>
-      })} 
+      <div className="product-tags-chips">
+        {tags.map((tag): any => {
+          return <Chip label={tag} variant="outlined"/>
+        })} 
+      </div>
     </div>
   )
 }

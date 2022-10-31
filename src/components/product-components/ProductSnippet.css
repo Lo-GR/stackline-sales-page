@@ -1,7 +1,13 @@
+h3, p {
+  color: rgba(0, 0, 0, 0.6)
+}
+
 .product-snippet-container{
-  width: 100%
+  width: 100%;
+  border-bottom: 1px rgba(0, 0, 0, 0.4) solid;
+  text-align: center;
 }
 
 .product-snippet-image{
-  width: 100%
+  width: 60%
 }

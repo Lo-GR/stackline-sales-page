@@ -1,6 +1,7 @@
 import React from 'react'
 import {salesFormatter} from '../../helpers/graphDataFormatter'
 import { LineChart, Line, XAxis, Tooltip, Legend, } from 'recharts';
+import Paper from '@mui/material/Paper';
 import './SalesGraph.css'
 
 interface SalesGraphProps{
@@ -15,7 +16,7 @@ interface SalesGraphProps{
 export default function SalesGraph({sales}: SalesGraphProps) {
   console.log(sales)
   return (
-    <div className="graph-container">
+    <Paper className="graph-container">
       <LineChart
         width={1500}
         height={500}
@@ -30,9 +31,9 @@ export default function SalesGraph({sales}: SalesGraphProps) {
         <XAxis dataKey="name" />
         <Tooltip />
         <Legend />
-        <Line type="monotone" dataKey="retailSales" stroke="#8884d8" activeDot={{ r: 8 }} />
-        <Line type="monotone" dataKey="wholeSales" stroke="#82ca9d" />
+        <Line type="monotone" dataKey="retailSales" name="Retail Sales" stroke="#AFD9FB" activeDot={{ r: 8 }} />
+        <Line type="monotone" dataKey="wholeSales" name="Wholesale Sales" stroke="#9BA6BF" />
       </LineChart>
-    </div>
+    </Paper>
   )
 }
